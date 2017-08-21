@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script
+		  src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	</head>
+			<h1>Bootstrap Notes</h1>
+		<p>Bootstrap is made up of a 12-column grid system. You add your content into the 'rows' and 'columns' using Bootstrap CSS classes. Bootstrap will then take care of the responsiveness work for us.</p>
+
+		<p>Go out and find a Bootstrap image like this one:</p>
+		<img src="./img/bootstrap.jpg"> 
+
+		<p>Because Bootstrap takes care of the responsiveness for us, we have to format things in a particular way:</p>
+		<ol>
+			<li><b>Containers</b> surround the whole section of rows and columns</li>
+			<li><b>Rows</b> represent a horizontal line of elements</li>
+			<li><b>Columns</b> represent the horizontal space that elements take up in a row</li>
+		</ol>
+		<h3>Types of Containers:</h3>
+		<ul>
+			<li>Fixed container: 'container' </li>
+				<ul>
+					<li>Has a fixed width, which changes at certain breakpoints</li>
+					<li>Has built-in padding of 15px all the way around</li>
+				</ul>
+			<li>Fluid container: 'container-fluid'</li>
+				<ul>
+					<li>Has a fluid width, which stretches to 100% of its parent element</li>
+					<li>Has built-in padding of 15px all the way around</li>
+				</ul>
+		</ul>
+		<p>**Once you get down to the mobile size screens, they look pretty much identical, it's at medium and large screens where you can see the differences**</p>
+
+	<body>
+		<h1>Example1</h1>
+		<div class="container">
+				<div class="row">
+					<div class="col-md-6" style="background-color: red; height: 400px">
+						<h3>Some text for testing</h3>
+					</div>
+				</div>
+		</div>
+
+<!-- Challenges:
+	Bronze:
+Create a container that is 3 columns and different colors
+Create sections that are 4 columns and different colors -->
+
+		<h1>Bronze:</h1>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3" style="background-color: green; height: 200px"></div>
+				<div class="col-md-3" style="background-color: blue; height: 200px"></div>	
+				<div class="col-md-3" style="background-color: yellow; height: 200px"></div>	
+			</div>
+		</div>	
+<!-- Silver:
+Make multiple rows inside a container. In row 1 have 3 columns of different colors. In row 2 have 6 columns with different colors. -->
+		<h1>Silver:</h1>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3" style="background-color: green; height: 200px"></div>
+				<div class="col-md-3" style="background-color: blue; height: 200px"></div>	
+				<div class="col-md-3" style="background-color: yellow; height: 200px"></div>
+			</div>
+			<div class="row">
+				<div class="col-md-1" style="background-color: green; height: 200px"></div>
+				<div class="col-md-1" style="background-color: blue; height: 200px"></div>	
+				<div class="col-md-1" style="background-color: yellow; height: 200px"></div>
+				<div class="col-md-1" style="background-color: orange; height: 200px"></div>
+				<div class="col-md-1" style="background-color: black; height: 200px"></div>
+				<div class="col-md-1" style="background-color: teal; height: 200px"></div>
+			</div>	
+		</div>
+<!-- Gold:
+Look up push/pull columns, and show push/pull columns for different screen sizes
+Look up hidden/visible properties and make images hidden or visible at different screen sizes.
+If all else fails, just play around with columns and resizing the browser. -->
+
+		<h1>Gold</h1>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-1" style="background-color: green; height: 200px"></div>
+				<div class="col-md-1" style="background-color: blue; height: 200px"></div>	
+				<div class="col-md-3" style="background-color: yellow; height: 200px"></div>
+				<div class="col-md-1" style="background-color: orange; height: 200px"></div>
+				<div class="col-md-1" style="background-color: black; height: 200px"></div>
+				<div class="col-md-1" style="background-color: teal; height: 200px"></div>
+			</div>	
+
+		</div>
+
+
+
+	</body>
+</html>
